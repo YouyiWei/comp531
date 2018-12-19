@@ -1,0 +1,11 @@
+<h1>Login</h1>
+
+<form id="Login">
+    <p>Account Name: <input type="text" id="accountName-login" name="accountName" pattern="[a-zA-Z]{1}[a-zA-Z0-9]*" required [(ngModel)]="inputName"><span id="nameValidity">{{ nameValidity }}</span></p>
+    <p>Password: <input type="password" id="password-login" name="password" required [(ngModel)]="inputPwd"><span id="pwdValidity">{{ pwdValidity }}</span></p>
+
+    <button type="submit" id="submit-login" value="Submit" (click)="onClick()">Submit</button>
+    <button type="reset" value="Reset">Clear</button>
+    <button type="submit" id="fb-login" (click)="loginWithFb()">Login with Facebook</button>
+    <p id="loginSuc">{{ loginMes }}</p>
+</form>

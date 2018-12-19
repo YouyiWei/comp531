@@ -1,0 +1,7 @@
+{ 
+    "netid": "yw76",
+    "frontend": "http://hw7-frontend-youyiwei.surge.sh/",
+    "backend": "https://youyiwei-web-ic18.herokuapp.com/",
+    "username": "realUser",
+    "password": "123"
+}

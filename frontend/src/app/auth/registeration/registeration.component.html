@@ -1,0 +1,22 @@
+<h1>Registration</h1>
+
+<form ngNativeValidate id="Registration" (ngSubmit)="onSubmit(regForm)" #regForm="ngForm">
+    <p>Account Name: <input type="text" id="accountName" name="accountName" placeholder="start with a letter" pattern="[a-zA-Z]{1}[a-zA-Z0-9]*" required><span id="nameValidity">{{ nameValidity }}</span></p>
+    <p>Display Name: <input type="text" id="displayName" name="displayName" placeholder="optional"></p>
+    <p>Email Address: <input type="email" id="emailAddress" name="emailAddress" required></p>
+    <p>Phone Number: <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></p>
+    
+    <p>Date of Birth: <input type="date" id="dateOfBirth" name="dateOfBirth" required><span id="dobValidity"></span></p>
+    
+    
+    <p>Zipcode: <input type="text" id="zipcode" name="zipcode" placeholder="12345/12345-6789" pattern="[0-9]{5}(-[0-9]{4})?" required></p>
+    
+    <p>Password: <input type="password" id="password" name="password" required></p>
+    <p>Password Confirmation: <input type="password" id="passwordConfir" name="password confirmation" required><span id="passwValidity"></span></p>
+    
+
+    <p><input type="hidden" id="timestamp" name="timestamp" value=""></p>
+
+    <button type="submit" id="submit" value="Submit">Submit</button>
+    <button type="reset" value="Reset">Clear</button>
+</form>

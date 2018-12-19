@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="author" content="Youyi Wei">
+    </head>
+    <body>
+      <div id="menu">
+          <div id="user">
+            <p><a id="logout" [routerLink]="[ '/auth' ]" (click)="logOut()">Log Out</a> <a [routerLink]="[ '/profile' ]">Profile</a></p>
+            <div>
+                <img src="{{mServ.user_avatar}}" />
+                <p>{{ mServ.user_name }}</p>
+                <p id="userStatus">{{ mServ.user_status }}</p>
+            </div>
+            <p><input id="newStatus" [(ngModel)]="inputStatus"><button id="update" (click)="update()">Update</button></p>
+          </div>
+
+          
+          <div id="followings">
+            <ul>
+                <li *ngFor="let following of mServ.followings; let i = index" [attr.data-index]="i">
+                  <app-following [picsSrcF]=following.avatar [followingName]=following.name [statusF]=following.status></app-following>
+                  <button (click)="unfollow(i)">Unfollow</button>
+                </li>
+            </ul>
+            <p><input id="newFollowing" [(ngModel)]="inputFollowing"><button (click)="addFollowing()">Add</button></p>
+            <p>{{ addFollowingMes }}</p>
+          </div>
+      </div>
+
+      <div id="post">
+          <input id="postText" [(ngModel)]="inputPost">
+          <p><input type="file" name="image" (change)="uploadImage($event)" accept="image/png, image/jpeg, image/gif, image/jpg"><button (click)="clearInput()">Cancel</button> <button id="post" (click)="post()">Post</button></p>
+      </div>
+          
+      <div id="search">
+          <p><input id="searchInput" [(ngModel)]="inputSearch" (input)="filterArticle(inputSearch)" placeholder="by text or author"></p>
+      </div>
+
+      <div id="posts">
+        <table>
+            <tr *ngFor="let article of filterArticles">
+              <app-posts class="posts" [picsSrc]=article.picture [text]=article.body [author]=article.author [time]=article.date [comments]=article.comments [postId]=article._id></app-posts>
+            </tr>
+        </table>
+      </div>
+    </body>
+</html>

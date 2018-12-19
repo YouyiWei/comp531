@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 69.0.3497 (Mac OS X 10.13.6)" package="" timestamp="2018-10-19T02:50:34" id="0" hostname="giyuuyubookpuro.dyndns.rice.edu" tests="24" errors="0" failures="0" time="0.769">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent should create the app" time="0.026" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).AppComponent"/>
+  <testcase name="AppComponent should have as title 'hw4'" time="0.031" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).AppComponent"/>
+  <testcase name="AuthComponent should create" time="0.079" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).AuthComponent"/>
+  <testcase name="LoginComponent should create" time="0.041" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).LoginComponent"/>
+  <testcase name="LoginComponent should log in a previously registered user" time="0.031" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).LoginComponent"/>
+  <testcase name="LoginComponent should not log in an invalid user" time="0.045" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).LoginComponent"/>
+  <testcase name="RegisterationComponent should create" time="0.028" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).RegisterationComponent"/>
+  <testcase name="RegisterationService should be created" time="0.01" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).RegisterationService"/>
+  <testcase name="FollowingComponent should create" time="0.019" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).FollowingComponent"/>
+  <testcase name="FollowingService should be created" time="0.003" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).FollowingService"/>
+  <testcase name="HeadlineComponent should create" time="0.008" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).HeadlineComponent"/>
+  <testcase name="HeadlineService should be created" time="0.005" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).HeadlineService"/>
+  <testcase name="MainComponent should create" time="0.069" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).MainComponent"/>
+  <testcase name="MainComponent should log out a user" time="0.068" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).MainComponent"/>
+  <testcase name="MainComponent should fetch articles for current logged in user" time="0.06" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).MainComponent"/>
+  <testcase name="MainComponent should update the search keyword" time="0.063" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).MainComponent"/>
+  <testcase name="MainComponent should filter displayed articles by the search keyword" time="0.06" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).MainComponent"/>
+  <testcase name="MainComponent should remove articles when removing a follower" time="0.058" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).MainComponent"/>
+  <testcase name="MainService should be created" time="0.007" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).MainService"/>
+  <testcase name="PostsComponent should create" time="0.016" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).PostsComponent"/>
+  <testcase name="PostsService should be created" time="0.003" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).PostsService"/>
+  <testcase name="ProfileComponent should create" time="0.028" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).ProfileComponent"/>
+  <testcase name="ProfileService should be created" time="0.005" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).ProfileService"/>
+  <testcase name="ProfileService should fetch the logged in user's profile information" time="0.006" classname="Chrome_69_0_3497_(Mac_OS_X_10_13_6).ProfileService"/>
+  <system-out>
+    <![CDATA[Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: undefined
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: null
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: undefined
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: null
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: 'log out'
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: undefined
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: null
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: undefined
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: null
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: undefined
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: null
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: undefined
+,Chrome 69.0.3497 (Mac OS X 10.13.6) LOG: null
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

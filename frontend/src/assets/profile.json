@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Youyi Wei", 
+        "avatar": "https://cpb-us-e1.wpmucdn.com/news-network.rice.edu/dist/c/2/files/2018/09/0904_HYDRAGAIN-b-1gilb80.jpg",
+        "status": "I'm Youyi",
+        "emailValue": "yw76@rice.edu",
+        "phonumValue": "832-661-5973",
+        "zipcodeValue": "77005",
+        "passwordValue": "weiyouyi",
+        "dateOfBirth": "01/25/1996"
+    },
+
+    {
+        "name": "John", 
+        "avatar": "https://cpb-us-e1.wpmucdn.com/news-network.rice.edu/dist/c/2/files/2018/09/0904_HYDRAGAIN-b-1gilb80.jpg",
+        "status": "I'm John",
+        "emailValue": "yw76@rice.edu",
+        "phonumValue": "832-661-5973",
+        "zipcodeValue": "77005",
+        "passwordValue": "john",
+        "dateOfBirth": "01/25/1996"
+    },
+
+    {
+        "name": "realUser", 
+        "avatar": "https://cpb-us-e1.wpmucdn.com/news-network.rice.edu/dist/c/2/files/2018/09/0904_HYDRAGAIN-b-1gilb80.jpg",
+        "status": "I'm realUser",
+        "emailValue": "a@b",
+        "phonumValue": "123-123-1234",
+        "zipcodeValue": "12345",
+        "passwordValue": "123456",
+        "dateOfBirth": "11/04/2000"
+    }
+]

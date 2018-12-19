@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="author" content="Youyi Wei">
+    </head>
+    <body>
+        <p><a [routerLink]="[ '/main' ]">Main Page</a></p>
+        <div>
+            <img id="userImg" src="{{ pServ.avatar }}" />
+            <form method="post" enctype="multipart/form-data">
+                <input type="file" name="image" (change)="uploadAvatar($event)" accept="image/png, image/jpeg, image/gif, image/jpg">
+            </form>
+
+            <br>
+            <p>Username: <input type="text" placeholder="Username" id="normalUsername"></p>
+            <p>Password: <input type="text" placeholder="Password" id="normalPassword"></p>
+            <button type="submit" (click)="link()">Link</button>
+            <button type="submit" (click)="unlink()">Unlink</button>
+
+        </div>
+        <div>
+            <p>Display Name: <input type="text" name="displayName" id="disname"><span id="nameValue">{{ pServ.name }}</span></p><br>
+
+            <p>Email Address: <input type="email" name="emailAddress" id="email"><span id="emailValue">{{ pServ.emailValue }}</span></p>
+            <p id="emailValidity"></p>
+
+            <p>Phone Number: <input type="tel" name="phoneNumber" id="phonum" placeholder="123-123-1234"><span id="phonumValue">{{ pServ.phonumValue }}</span></p>
+            <p id="phonumValidity"></p>
+
+            <p>Data of Birth: <input type="text" name="dateOfBirth" id="dob" readonly="readonly" value="{{pServ.dateOfBirth}}"></p><br>
+            <p id="dobValidity"></p>
+
+            <p>Zipcode: <input type="text" name="zipcode" id="zipcode" placeholder="12345/12345-1234"><span id="zipcodeValue">{{ pServ.zipcodeValue }}</span></p>
+            <p id="zipcodeValidity"></p>
+
+            <p>Password: <input type="password" id="password" name="password"><span id="passwordValue">{{ pServ.passwordValue }}</span></p><br>
+            <p>Password Confirmation: <input type="password" id="passwordConfir" name="password confirmation"><span id="passwordConfirValue">{{ pServ.passwordValue }}</span></p>
+            <p id="passwValidity"></p>
+
+            <button type="submit" (click)="onClick()">Update</button>
+            <p id="massage"></p>
+        </div>
+    </body>
+</html>

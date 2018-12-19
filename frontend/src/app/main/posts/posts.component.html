@@ -1,0 +1,45 @@
+  <tr *ngIf="ifEditPost == false">
+    <p>{{ text }}</p>
+  </tr>
+
+  <!--edit post-->
+  <tr *ngIf="ifEditPost == true">
+    <input type="text" value="{{ text }}" id="inputPost">
+    <button type="button" (click)="editPost()">OK</button>
+  </tr>
+
+  <tr *ngIf="picsSrc.length != 0">
+    <img [src]="picsSrc" />
+  </tr>
+  <!------------->
+
+  <p><span>{{ author }}</span><span>{{ time }}</span></p>
+
+  <!--comment-->
+  <tr *ngIf="ifComment == true">
+    <input type="text" id="inputNewComment">
+    <button type="button" (click)="comment()">OK</button>
+  </tr>
+  <button type="button" (click)="isComment()">Comment</button>
+  <!----------->
+
+  <button type="button" (click)="isEditPost()">Edit</button>
+  <button type="button" (click)="hideComments()">{{ ifHideComments }}</button>
+
+  <table>
+    <tr *ngFor="let comment of showComments">
+
+      <!--edit comment-->
+      <div *ngIf="comment._id != commentId">
+        <p>{{ comment.author }}: {{ comment.body }}</p>
+      </div>
+
+      <div *ngIf="comment._id == commentId">
+        <input type="text" value="{{ comment.body }}" id="inputComment">
+        <button type="button" (click)="editComment()">OK</button>
+      </div>
+      <!---------------->
+
+      <button type="button" (click)="isEditComment(comment._id)">Edit</button>
+    </tr>
+  </table>

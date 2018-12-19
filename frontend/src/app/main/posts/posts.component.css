@@ -1,0 +1,15 @@
+img {
+    height: 15rem;
+    width: 20rem;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+p {
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+}
+
+span {
+    padding: 10px 10px 10px 10px;
+}
